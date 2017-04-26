@@ -1,8 +1,16 @@
 {
-    "name": "symfony/framework-standard-edition",
+    "name": "santiagoics/gestor-notas",
     "license": "MIT",
     "type": "project",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "description": "Gestor de notas",
+    "authors": [
+		{
+			"name": "Santiago Paños",
+			"email": "santi.panos@grupoicsolutions.com",
+			"homepage": "http://www.grupoicsolutions.com",
+			"role": "developer"
+		}
+	],
     "autoload": {
         "psr-4": { "": "src/" },
         "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
