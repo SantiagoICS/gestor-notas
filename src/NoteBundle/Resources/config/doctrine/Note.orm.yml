@@ -1,0 +1,36 @@
+NoteBundle\Entity\Note:
+    type: entity
+    table: null
+    repositoryClass: NoteBundle\Repository\NoteRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+        date:
+            type: datetime
+        text:
+            type: text
+    manyToOne:
+        user:
+            targetEntity: User
+            joinColumn:
+                name: user_id
+                referencedColumnName: id
+            inversedBy: notes
+        category:
+            targetEntity: Category
+            joinColumn:
+                name: category_id
+                referencedColumnName: id
+        priority:
+            targetEntity: Priority
+            joinColumn:
+                name: priority_id
+                referencedColumnName: id
+    lifecycleCallbacks: {  }

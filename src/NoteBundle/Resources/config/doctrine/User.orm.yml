@@ -1,0 +1,26 @@
+NoteBundle\Entity\User:
+    type: entity
+    table: null
+    repositoryClass: NoteBundle\Repository\UserRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        password:
+            type: string
+            length: 255
+        email:
+            type: string
+            length: 255
+            unique: true
+    oneToMany:
+        notes:
+            targetEntity: Note
+            mappedBy: user
+    lifecycleCallbacks: {  }

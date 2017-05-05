@@ -1,0 +1,19 @@
+NoteBundle\Entity\Priority:
+    type: entity
+    table: null
+    repositoryClass: NoteBundle\Repository\PriorityRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        showOrder:
+            type: integer
+            unique: true
+            column: show_order
+    lifecycleCallbacks: {  }
