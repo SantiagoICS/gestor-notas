@@ -4,8 +4,18 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "38e50261e25aa40c254d49f12c7af895",
+    "content-hash": "21221ec0f2c5bce15a0b6bb1dee1a80a",
     "packages": [
+        {
+            "name": "BlackrockDigital/startbootstrap-sb-admin-2",
+            "version": "3.3.7+1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BlackrockDigital/startbootstrap-sb-admin-2.git",
+                "reference": "v3.3.7+1"
+            },
+            "type": "library"
+        },
         {
             "name": "composer/ca-bundle",
             "version": "1.0.7",
